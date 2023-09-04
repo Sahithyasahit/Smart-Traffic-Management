@@ -68,9 +68,8 @@
 
 
 # Contributors :
-- Suraj Machhindra Yerkal
-- Siddhesh Rajendra Mehta
-- Tushar Ram Godbole
+- Sahithya S
+- SriJanani Adhithya A 
 	
 # License & copyright
 
