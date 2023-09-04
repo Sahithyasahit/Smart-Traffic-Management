@@ -1,77 +1,43 @@
-# Project:- Traffic Management Using Signal Syncronization.
+ABSTRACT:
+One of the best ways to prevent troublesome traffic bottlenecks is to synchronize traffic light systems. When it comes to traffic management,
+timing of the traffic is a crucial consideration. Non synchronized traffic light systems are one of the primary reasons for traffic
+bottlenecks. When a light turns green, traffic starts to move, but when it gets to the next light, the signal is still in the red.
+This will stop the flow of traffic continuously, especially on major thoroughfares. To clear congested traffic in a certain amount of time,
+a key route's traffic flow must be smooth. In order to properly re-time traffic signals along the researched road, the study looked at the 
+vehicle density as well as the timing of the traffic. The findings of this study are consistent with the claim that synchronizing traffic 
+lights on major highways will significantly enhance traffic flow by retiming signal lights. The signals will be retimed according to the 
+density of the road. It uses the libraries in python for generating the output.
+
+EXSISTING SYSTEM:
+The exiting traffic system is generally controlled by the traffic police. The main drawback of this system controlled by the traffic police
+is that the system is not smart enough to deal with the traffic congestion. The traffic police official can either block a road for more
+amount of time or let the vehicles on another road pass by i.e. the decision making may not be smart enough and it entirely depends on the
+official’s decision. Moreover, even if traffic lights are used the time interval for which the vehicles will be showed green or red signal 
+is fixed. Therefore, it may not be able to solve the problem of traffic congestion. In India, it has been seen that even after the presence
+of traffic lights, traffic police officials are on duty, which means that in this system more manpower is required and it is not economical
+in nature. The disadvantages include traffic congestion, no means to detect the traffic congestion, number of accidents are more, it 
+requires man power and not economical.
+
+PROPOSED SYSTEM:
+The proposed solution for Traffic synchronization involves sensors that collect real time data from the intersection that has the smart 
+signals installed. Based on the density of cars, the width of the road, and the average speed of each lane, the time slice for each
+signal to turn green is calculated. The system is indirectly used by the people driving vehicles as it does not get direct input from 
+them. Our model will allocate smartly the time period of green light for each road. We have chosen image processing for calculation of
+traffic density as cameras are very much cheaper than other devices such as sensors. But their presence on a road adds to the traffic
+density input that is to be used by the system. The state transport department shall directly use the system, for their goal of traffic
+control. The transport department shall be responsible for installation and maintenance of smart signals.
+
+DEVELOPMENT ENVIRONMENT:
+SOFTWARE REQUIREMENT 
+ Python
+ Pygame
+ Numpy 
+ Matplotlib
+
+HARDWARE REQUIREMENT 
+ Dual or Quad-core Intel Xeon processor
+  16 GB or more RAM
+  1 TB or more hard disk storage capacity
+  Windows or Linux Operating System
 
 
-### Programming Language Used:- PYTHON
-
-### GUI:- PYGAME
-
-### Supporting Libraries:-
-	pygame
-	matplotlib
-	time
-	random
-	numpy
-
-
-
-
-## Project Discription:-
-### Cause Of Traffic:
-	By normal observation we can see that traffic problem occurs only at some
-	specific location like big highways other location donot have much traffic at
-	same time. This is because highways have many subrouts connected. Generally
-	these subrouts which are connected to highway donot have traffic problem but
-	when vehicles on these subrouts add up in highway leads to traffic problem in
-	highway.
-
-### Solution:
-	In current situation if there is traffic problem at some point that particular
-	traffic signal system fails to solve traffic problem. this is because currently
-	traffic signal does not vary with density of vehicles present at that traffic
-	signal.
-	In the syncronization of traffic signal we will bring contact of every traffic
-	signal in nearby that location lets say we will syncronize all traffic signals
-	in Pune city.
-
-
-### Basic idea :
-	Here we are increasing and decreasing the signal duration on the road in order
-	to avoid traffic jams. This doc is in sink with the image shared. Suppose there
-	is a main road as mentioned and is linked by 5 small roads.
-	There is a high possibility that there is a traffic jam on the main road. The
-	main road contains a signal. When the signal shows red, traffic strarts
-	accumulating. To solve this issue of this unexpected traffic we have an idea.
-	Suppose the main road signal is of 60 secs. We have sensors to keep atrack of
-	traffic. When the traffic level reaches a threshhold value, the time of the main
-	road signal reduces, say that it becomes 50 secs. The time reduction is of 10
-	secs. This time decrease is compensated by the increase in time of the signals
-	of the roads connected to the main road. Say the time of each of the signals of
-	the 5 roads connected to the main roads increase by 2 secs each. This increase
-	in time of the signals depends on the traffic on these roads. Each signal is in
-	sink with the signals before and after it on the road.
-
-### Aim :
-	Before implementing the idea we are checking the time for a vehicle to reach a perticular destination.
-	After implementing the idea we are checking the time for a vehicle to reach a
-	perticular destination.
-	We are the comparing the two time periods and manage the optimizations.
-	
-	
-### Technology :
-	Basically we have implemented this model by using GUI and some inbuilt
-	libraries.
-	Choosen language is Python as it supports to OOP and having inbuilt
-	libraries related to GUI.
-
-
-	More information is present in the "Traffic_Management.pdf" file.
-
-
-# Contributors :
-- Suraj Machhindra Yerkal
-- Siddhesh Rajendra Mehta
-- Tushar Ram Godbole
-	
-# License & copyright
-
-Licensed under the [MIT License](LICENSE)
